@@ -2,6 +2,10 @@
 
 A full-stack, responsive web application for a digital coffee shop, allowing users to browse products, manage their cart, and maintain their profiles. 
 
+## 🌍 Live Links
+* **Frontend (Vercel):** [https://coffee-time-a-digital-coffee-shop.vercel.app/](https://coffee-time-a-digital-coffee-shop.vercel.app/)
+* **Backend API (Render):** [https://coffee-time-a-digital-coffee-shop-1.onrender.com/](https://coffee-time-a-digital-coffee-shop-1.onrender.com/)
+
 ## 🚀 Tech Stack
 * **Frontend:** React.js, Vite
 * **Backend:** Java Spring Boot 3
