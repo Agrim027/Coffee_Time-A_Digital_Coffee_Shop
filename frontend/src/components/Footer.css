@@ -1,0 +1,90 @@
+/* Add your footer.css content here */
+footer {
+    background: #2c1e1e;
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo h2 {
+    color: wheat;
+    margin-bottom: 1rem;
+}
+
+.footer-logo p {
+    margin-bottom: 0.5rem;
+    color: #8d7c7c;
+}
+
+.social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: wheat;
+}
+
+.footer-links h3,
+.footer-about h3 {
+    color: wheat;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-links a {
+    color: #8d7c7c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: wheat;
+}
+
+.footer-about {
+    max-width: 300px;
+}
+
+.footer-about p {
+    color: #8d7c7c;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    background: #1a1313;
+    color: #8d7c7c;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: wheat;
+    text-decoration: none;
+    margin: 0 0.3rem;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

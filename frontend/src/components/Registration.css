@@ -1,0 +1,213 @@
+.registration-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #2c1e1e 50%, #7c573c 50%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.registration-container {
+    background-color: rgb(69, 33, 6);
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    transition: 0.3s ease;
+}
+
+.registration-container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.registration-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5e0c3;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #d1a35e;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.registration-page form {
+    width: 100%;
+}
+
+.registration-page table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.registration-page label {
+    font-weight: bold;
+    color: #f0d6b3;
+}
+
+.registration-page .input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f5e0c3;
+    color: #2c1e1e;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.registration-page .input:focus {
+    background-color: #fff8ee;
+}
+
+.registration-page textarea.input {
+    resize: none;
+    height: 100px;
+}
+
+.registration-page .btn {
+    background: radial-gradient(at top left, #5a4740, #2c1e1e);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: 0.3s ease;
+}
+
+.registration-page .btn:hover {
+    background: radial-gradient(at bottom right, #5a4740, #2c1e1e);
+    transform: scale(1.05);
+}
+
+.registration-page td {
+    vertical-align: top;
+}
+
+/* Footer styles */
+.registration-page footer {
+    background: #2c1e1e;
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.registration-page .footer-logo img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.registration-page .footer-logo h2 {
+    color: wheat;
+    margin-bottom: 1rem;
+}
+
+.registration-page .footer-logo p {
+    margin-bottom: 0.5rem;
+    color: #8d7c7c;
+}
+
+.registration-page .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.registration-page .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.registration-page .social-icons a:hover {
+    color: wheat;
+}
+
+.registration-page .footer-links h3,
+.registration-page .footer-about h3 {
+    color: wheat;
+    margin-bottom: 1rem;
+}
+
+.registration-page .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.registration-page .footer-links a {
+    color: #8d7c7c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.registration-page .footer-links a:hover {
+    color: wheat;
+}
+
+.registration-page .footer-about {
+    max-width: 300px;
+}
+
+.registration-page .footer-about p {
+    color: #8d7c7c;
+    line-height: 1.6;
+}
+
+.registration-page .footer-bottom {
+    background: #1a1313;
+    color: #8d7c7c;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.registration-page .footer-bottom a {
+    color: wheat;
+    text-decoration: none;
+    margin: 0 0.3rem;
+}
+
+.registration-page .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .registration-container {
+        width: 90%;
+        padding: 30px 25px;
+    }
+
+    .registration-page h1 {
+        font-size: 2rem;
+    }
+
+    .registration-page table {
+        border-spacing: 10px;
+    }
+    
+    .registration-page footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

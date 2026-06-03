@@ -1,0 +1,111 @@
+.login-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #2c1e1e 50%, #7c573c 50%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.login-page .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2c1e1e;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-page .navbar img {
+    height: 60px;
+}
+
+.login-page .login-box {
+    background-color: rgb(69, 33, 6);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.login-page .login-box h1 {
+    color: #f5e0c3;
+    border-bottom: 2px solid #d1a35e;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.login-page label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #f0d6b3;
+}
+
+.login-page .input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5e0c3;
+    color: #2c1e1e;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.login-page .input:focus {
+    background-color: #fff8ee;
+}
+
+.login-page .btn {
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background: radial-gradient(at top left, #5a4740, #2c1e1e);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 10px;
+}
+
+.login-page .btn:hover {
+    background: radial-gradient(at bottom right, #5a4740, #2c1e1e);
+    transform: scale(1.05);
+}
+
+.login-page .extra-links {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.login-page .extra-links a {
+    color: #f5e0c3;
+    text-decoration: none;
+}
+
+.login-page .extra-links a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .login-page .login-box {
+        width: 90%;
+        padding: 30px 25px;
+    }
+}
