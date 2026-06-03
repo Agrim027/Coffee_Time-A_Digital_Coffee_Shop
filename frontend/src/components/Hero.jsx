@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 import coffeeCupImg from '../assets/Image/Coffee cup.png';
+import powderImg from '../assets/Image/Powder.jpg';
+import beansImg from '../assets/Image/Beans.jpg';
+import leafImg from '../assets/Image/Leaf.jpg';
 
 const Hero = () => {
     return (
@@ -24,9 +27,9 @@ const Hero = () => {
             
             {/* Middle Content*/}
             <div className="middle">
-                <div className="circle powder"></div>
-                <div className="circle beans"></div>
-                <div className="circle leaf"></div>
+                <div className="circle powder" style={{ backgroundImage: `url(${powderImg})` }}></div>
+                <div className="circle beans" style={{ backgroundImage: `url(${beansImg})` }}></div>
+                <div className="circle leaf" style={{ backgroundImage: `url(${leafImg})` }}></div>
             </div>
             
             {/* Right Content*/}
