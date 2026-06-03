@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
+import coffeeCupImg from '../assets/Image/Coffee cup.png';
 
 const Hero = () => {
     return (
@@ -30,7 +31,7 @@ const Hero = () => {
             
             {/* Right Content*/}
             <div className="hero_split right">
-                <img src="/Image/Coffee cup.png" alt="Coffee Cup" />
+                <img src={coffeeCupImg} alt="Coffee Cup" />
             </div>
         </section>
     );

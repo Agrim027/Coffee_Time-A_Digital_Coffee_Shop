@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './Profile.css';
+import logoImg from '../assets/logo.png';
 
 const Profile = () => {
     const [user, setUser] = useState(null);
@@ -202,7 +203,7 @@ const Profile = () => {
             {/* Header */}
             <nav className="navbar">
                 <div className="logo">
-                    <img src="/logo.png" alt="Coffee Shop Logo" />
+                    <img src={logoImg} alt="Coffee Shop Logo" />
                     <span className="logo-text">Coffee Time</span>
                 </div>
                 <ul className="navlist">
@@ -372,7 +373,7 @@ const Profile = () => {
             {/* Footer */}
             <footer>
                 <div className="footer-logo">
-                    <img src="/logo.png" alt="Coffee Shop Logo" />
+                    <img src={logoImg} alt="Coffee Shop Logo" />
                     <h2>Coffee Shop</h2>
                     <p>123 Brew Street, Roastery Lane<br />New Delhi, India</p>
                     <p>📞 +91 7652022879</p>

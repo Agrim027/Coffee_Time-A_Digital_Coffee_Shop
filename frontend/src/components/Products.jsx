@@ -1,6 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Products.css';
+import logoImg from '../assets/logo.png';
+import cappuccinoImg from '../assets/Coffee/Cappuccino.avif';
+import americanoImg from '../assets/Coffee/Americano.avif';
+import latteImg from '../assets/Coffee/Latte.avif';
+import mochaImg from '../assets/Coffee/Mocha.avif';
+import espressoImg from '../assets/Coffee/Espresso.avif';
+import hazelnutImg from '../assets/Coffee/Hazelnut.avif';
+import indianImg from '../assets/Tea/Indian.avif';
+import greenImg from '../assets/Tea/Green.avif';
+import roseImg from '../assets/Tea/Rose.avif';
+import kesarImg from '../assets/Tea/Kesar.avif';
+import tulsiImg from '../assets/Tea/Tulsi.avif';
+import herbalImg from '../assets/Tea/Herbal.avif';
+import blackForestImg from '../assets/Beverage/Black forest.avif';
+import bundtCakeImg from '../assets/Beverage/Bundt cake.jpg';
+import pastriesImg from '../assets/Beverage/Pastries.avif';
+import carrotImg from '../assets/Beverage/Carrot.avif';
+import waffersImg from '../assets/Beverage/Waffers.avif';
+import hotChocolateImg from '../assets/Beverage/Hot chocolate.avif';
+import macaronImg from '../assets/Beverage/Macaron.avif';
+import mousseImg from '../assets/Beverage/Mousse.avif';
 
 const Products = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -28,7 +49,7 @@ const Products = () => {
             {/* Navbar */}
             <nav className="navbar">
                 <div className="logo">
-                    <img src="/logo.png" alt="Logo" />
+                    <img src={logoImg} alt="Logo" />
                     <span className="logo-text">Coffee Time</span>
                 </div>
                 <ul className="navlist">
@@ -45,7 +66,7 @@ const Products = () => {
             {/* Header Section */}
             <header>
                 <div id="head1">
-                    <img id="logo1" style={{borderRadius: '100%'}} src="/logo.png" alt="Coffee Shop Logo" className="logo" />
+                    <img id="logo1" style={{borderRadius: '100%'}} src={logoImg} alt="Coffee Shop Logo" className="logo" />
                     <div id="text1">
                         Products
                         <div className="typewriter" id="text2">What Can I Serve To Youu!!!&nbsp;&nbsp;</div>
@@ -59,37 +80,37 @@ const Products = () => {
                 <br />
                 <div id="div3">
                     <div className="product-card">
-                        <img className="imgh" src="/Coffee/Cappuccino.avif" alt="Cappuccino" />
+                        <img className="imgh" src={cappuccinoImg} alt="Cappuccino" />
                         <h3>Spec. Cappuccino</h3>
                         <p className="price">₹149/-</p>
                         <button className="btncart" onClick={() => addToCart('Spec. Cappuccino')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Coffee/Americano.avif" alt="Americano" />
+                        <img className="imgh" src={americanoImg} alt="Americano" />
                         <h3>Americano</h3>
                         <p className="price">₹119/-</p>
                         <button className="btncart" onClick={() => addToCart('Americano')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Coffee/Latte.avif" alt="Latte" />
+                        <img className="imgh" src={latteImg} alt="Latte" />
                         <h3>Coffee Latte</h3>
                         <p className="price">₹109/-</p>
                         <button className="btncart" onClick={() => addToCart('Coffee Latte')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Coffee/Mocha.avif" alt="Mocha" />
+                        <img className="imgh" src={mochaImg} alt="Mocha" />
                         <h3>Mocha Brew</h3>
                         <p className="price">₹99/-</p>
                         <button className="btncart" onClick={() => addToCart('Mocha Brew')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Coffee/Espresso.avif" alt="Espresso" />
+                        <img className="imgh" src={espressoImg} alt="Espresso" />
                         <h3>Espresso</h3>
                         <p className="price">₹75/-</p>
                         <button className="btncart" onClick={() => addToCart('Espresso')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Coffee/Hazelnut.avif" alt="Hazelnut" />
+                        <img className="imgh" src={hazelnutImg} alt="Hazelnut" />
                         <h3>Hazelnut Coffee</h3>
                         <p className="price">₹69/-</p>
                         <button className="btncart" onClick={() => addToCart('Hazelnut Coffee')}>Add to cart</button>
@@ -104,37 +125,37 @@ const Products = () => {
                 <br />
                 <div id="div3">
                     <div className="product-card">
-                        <img className="imgh" src="/Tea/Indian.avif" alt="Indian Tea" />
+                        <img className="imgh" src={indianImg} alt="Indian Tea" />
                         <h3>Indian Chai</h3>
                         <p className="price">₹19/-</p>
                         <button className="btncart" onClick={() => addToCart('Indian Chai')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Tea/Green.avif" alt="Green Tea" />
+                        <img className="imgh" src={greenImg} alt="Green Tea" />
                         <h3>Green Tea</h3>
                         <p className="price">₹49/-</p>
                         <button className="btncart" onClick={() => addToCart('Green Tea')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Tea/Rose.avif" alt="Rose Tea" />
+                        <img className="imgh" src={roseImg} alt="Rose Tea" />
                         <h3>Rose Tea</h3>
                         <p className="price">₹59/-</p>
                         <button className="btncart" onClick={() => addToCart('Rose Tea')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Tea/Kesar.avif" alt="Kesar Tea" />
+                        <img className="imgh" src={kesarImg} alt="Kesar Tea" />
                         <h3>Kesar Tea</h3>
                         <p className="price">₹69/-</p>
                         <button className="btncart" onClick={() => addToCart('Kesar Tea')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Tea/Tulsi.avif" alt="Tulsi Tea" />
+                        <img className="imgh" src={tulsiImg} alt="Tulsi Tea" />
                         <h3>Tulsi Tea</h3>
                         <p className="price">₹29/-</p>
                         <button className="btncart" onClick={() => addToCart('Tulsi Tea')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Tea/Herbal.avif" alt="Herbal Tea" />
+                        <img className="imgh" src={herbalImg} alt="Herbal Tea" />
                         <h3>Herbal Tea</h3>
                         <p className="price">₹59/-</p>
                         <button className="btncart" onClick={() => addToCart('Herbal Tea')}>Add to cart</button>
@@ -149,31 +170,31 @@ const Products = () => {
                 <br />
                 <div id="div3">
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Black forest.avif" alt="Black Forest" />
+                        <img className="imgh" src={blackForestImg} alt="Black Forest" />
                         <h3>Black Forest</h3>
                         <p className="price">₹499/-</p>
                         <button className="btncart" onClick={() => addToCart('Black Forest')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Bundt cake.jpg" alt="Bundt Cake" />
+                        <img className="imgh" src={bundtCakeImg} alt="Bundt Cake" />
                         <h3>Bundt Cake</h3>
                         <p className="price">₹249/-</p>
                         <button className="btncart" onClick={() => addToCart('Bundt Cake')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Pastries.avif" alt="Pastries" />
+                        <img className="imgh" src={pastriesImg} alt="Pastries" />
                         <h3>Pastries</h3>
                         <p className="price">₹99/-</p>
                         <button className="btncart" onClick={() => addToCart('Pastries')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Carrot.avif" alt="Carrot Cake" />
+                        <img className="imgh" src={carrotImg} alt="Carrot Cake" />
                         <h3>Carrot Cake</h3>
                         <p className="price">₹159/-</p>
                         <button className="btncart" onClick={() => addToCart('Carrot Cake')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Waffers.avif" alt="Waffers" />
+                        <img className="imgh" src={waffersImg} alt="Waffers" />
                         <h3>Waffers</h3>
                         <p className="price">₹59/-</p>
                         <button className="btncart" onClick={() => addToCart('Waffers')}>Add to cart</button>
@@ -188,19 +209,19 @@ const Products = () => {
                 <br />
                 <div id="div3">
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Hot chocolate.avif" alt="Hot Chocolate" />
+                        <img className="imgh" src={hotChocolateImg} alt="Hot Chocolate" />
                         <h3>Hot Chocolate</h3>
                         <p className="price">₹104/-</p>
                         <button className="btncart" onClick={() => addToCart('Hot Chocolate')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Macaron.avif" alt="Macaron" />
+                        <img className="imgh" src={macaronImg} alt="Macaron" />
                         <h3>Macaron</h3>
                         <p className="price">₹75/-</p>
                         <button className="btncart" onClick={() => addToCart('Macaron')}>Add to cart</button>
                     </div>
                     <div className="product-card">
-                        <img className="imgh" src="/Beverage/Mousse.avif" alt="Mousse" />
+                        <img className="imgh" src={mousseImg} alt="Mousse" />
                         <h3>Mousse</h3>
                         <p className="price">₹49/-</p>
                         <button className="btncart" onClick={() => addToCart('Mousse')}>Add to cart</button>
@@ -221,7 +242,7 @@ const Products = () => {
             {/* Footer Section */}
             <footer>
                 <div className="footer-logo">
-                    <img src="/logo.png" alt="Coffee Shop Logo" />
+                    <img src={logoImg} alt="Coffee Shop Logo" />
                     <h2>Coffee Shop</h2>
                     <p>123 Brew Street, Roastery Lane<br />New Delhi, India</p>
                     <p>📞 +91 7652022879</p>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Payment.css';
+import logoImg from '../assets/logo.png';
+import uPIImg from '../assets/UPI.png';
 
 const UPIPayment = () => {
     const [upiId, setUpiId] = useState('');
@@ -52,7 +54,7 @@ const UPIPayment = () => {
         <div className="payment-page">
             <nav className="navbar">
                 <div className="logo">
-                    <img src="/logo.png" alt="Logo" />
+                    <img src={logoImg} alt="Logo" />
                     <span className="logo-text">Coffee Time</span>
                 </div>
                 <ul className="navlist">
@@ -78,7 +80,7 @@ const UPIPayment = () => {
                                 <span>QR CODE</span>
                                 <div className="qr-image">
                                     <div className='upi'>
-                                        <img src="UPI.png" alt="QR" />
+                                        <img src={uPIImg} alt="QR" />
                                     </div>
                                 </div>
                                 <p>Scan to Pay</p>

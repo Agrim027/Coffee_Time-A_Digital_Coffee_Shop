@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Cart.css';
+import logoImg from '../assets/logo.png';
 
 const Cart = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -124,7 +125,7 @@ const Cart = () => {
             {/* Original Navbar */}
             <nav className="navbar">
                 <div className="logo">
-                    <img src="/logo.png" alt="Logo" />
+                    <img src={logoImg} alt="Logo" />
                     <span className="logo-text">Coffee Time</span>
                 </div>
                 <ul className="navlist">

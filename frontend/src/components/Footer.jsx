@@ -1,12 +1,13 @@
 import React from 'react';
 import './Footer.css';
+import logoImg from '../assets/Image/logo.png';
 
 const Footer = () => {
     return (
         <>
             <footer>
                 <div className="footer-logo">
-                    <img src="/Image/logo.png" alt="Coffee Shop Logo" />
+                    <img src={logoImg} alt="Coffee Shop Logo" />
                     <h2>Coffee Shop</h2>
                     <p>123 Brew Street, Roastery Lane<br />New Delhi, India</p>
                     <p>📞 +91 7652022879</p>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './Orders.css';
+import logoImg from '../assets/logo.png';
 
 const Orders = () => {
     const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Orders = () => {
             {/* Header */}
             <nav className="navbar">
                 <div className="logo">
-                    <img src="/logo.png" alt="Coffee Shop Logo" />
+                    <img src={logoImg} alt="Coffee Shop Logo" />
                     <span className="logo-text">Coffee Time</span>
                 </div>
                 <ul className="navlist">
@@ -90,7 +91,7 @@ const Orders = () => {
             {/* Footer */}
             <footer>
                 <div className="footer-logo">
-                    <img src="/logo.png" alt="Coffee Shop Logo" />
+                    <img src={logoImg} alt="Coffee Shop Logo" />
                     <h2>Coffee Shop</h2>
                     <p>123 Brew Street, Roastery Lane<br />New Delhi, India</p>
                     <p>📞 +91 7652022879</p>

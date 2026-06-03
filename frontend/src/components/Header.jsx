@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useNavigate } from 'react-router-dom';
+import logoImg from '../assets/Image/logo.png';
 
 const Header = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -94,7 +95,7 @@ const Header = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="/Image/logo.png" alt="Logo" />
+                <img src={logoImg} alt="Logo" />
                 <span className="logo-text">Coffee Time</span>
             </div>
             
